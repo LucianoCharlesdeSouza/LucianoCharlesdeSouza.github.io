@@ -27,7 +27,7 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-6 col-xl-5 mx-auto">
-                <div class="row">
+                <div class="row" style="margin-left: 3px;">
                     <div v-for="card in memoryCards" class="flip-container"
                         :class="{ 'flipped': card.isFlipped , 'matched' : card.isMatched}" @click="flipCard(card)">
                         <div class="memorycard">
