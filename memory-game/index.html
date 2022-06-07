@@ -27,13 +27,13 @@
         </div>
         <div class="row">
             <div class="col-md-6 col-lg-6 col-xl-5 mx-auto">
-                <div class="row justify-content-md-center">
+                <div class="row">
                     <div v-for="card in memoryCards" class="flip-container"
                         :class="{ 'flipped': card.isFlipped , 'matched' : card.isMatched}" @click="flipCard(card)">
                         <div class="memorycard">
-                            <div class="front border rounded shadow"><img width="70" height="120"
+                            <div class="front p-1"><img width="80" height="100"
                                     src="/assets/images/memorycard/Cat_13.png"></div>
-                            <div class="back rounded border shadow"><img width="70" height="120"
+                            <div class="back p-1"><img width="80" height="100"
                                     :src="'/assets/images/memorycard/'+card.img"></div>
                         </div>
                     </div>
