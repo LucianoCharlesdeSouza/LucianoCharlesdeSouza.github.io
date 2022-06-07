@@ -31,10 +31,10 @@
                     <div v-for="card in memoryCards" class="flip-container"
                         :class="{ 'flipped': card.isFlipped , 'matched' : card.isMatched}" @click="flipCard(card)">
                         <div class="memorycard">
-                            <div class="front rounded shadow"><img width="70" height="120"
-                                    src="/memory-game/assets/images/memorycard/Cat_13.png"></div>
-                            <div class="back rounded "><img width="70" height="120"
-                                    :src="'/memory-game/assets/images/memorycard/'+card.img"></div>
+                            <div class="front border rounded shadow"><img width="70" height="120"
+                                    src="/assets/images/memorycard/Cat_13.png"></div>
+                            <div class="back rounded border shadow"><img width="70" height="120"
+                                    :src="'/assets/images/memorycard/'+card.img"></div>
                         </div>
                     </div>
                 </div>
